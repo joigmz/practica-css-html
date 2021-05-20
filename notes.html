@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Inicio</title>
+        <meta name="description" content="I designed this page to show my personal projects, and additional information about my professional profile.">
+        <meta name="keywords" content="Python, Math, MS excel, SQL, C++, AWS, GCP, Data Science"> 
+        <style>
+            /*body {
+                background: url(images/giphy.gif);
+                background-size:100%;
+                background-repeat: repeat-y;
+                background-attachment: fixed;
+                height:100%;
+                width:100%;
+                }*/
+            h1, h2 {
+                color:green;
+                font: 36pt serif;
+            }
+            ul {
+              font-style: italic;
+              font-weight: bold;
+                }
+
+            /*
+                BLOCKQUOTE {
+                color: white;
+                margin-top: 1em;
+                margin-right: 0em;
+                margin-bottom: 1em;
+                margin-left: 0em;
+                font-style: italic;
+            }
+            */
+            BLOCKQUOTE {
+                margin: 1em 0em 1em 0em;
+                font-style: italic;
+                background: #EDB;
+                padding: 0.5em;
+            }
+            a:visited, a:link {
+                text-decoration: none;
+            }
+            a:hover {background: cyan;}
+
+        </style>
+    </head>
+    <body>
+        <h2 id="top">Top</h2>
+        <hr>
+        <h1>Welcome</h1>
+        <hr>
+        <p>Who is Jose Izam?</p>
+        <h1>unorder list</h1>
+        <ul>
+            <li>Industrial Engineer from the Adolfo Ibañez University</li>
+            <li>Tech lover</li>
+            <li>Master student in data science</li>
+        </ul>
+        <hr>
+        <h1>order list</h1>
+        <ol type="lower-alpha">
+            <li>Industrial Engineer from the Adolfo Ibañez University</li>
+            <li>Tech lover</li>
+            <li>Master student in data science</li> 
+        </ol>
+        <hr>
+        <h1>definition list</h1>
+        <dl>
+            <dt>term</dt>
+            <dd>definition</dd>
+        </dl>
+        <hr>
+        <H1>Links options</H1>
+        <dl>
+            <dt>_blank: Open the new window.</dt>
+            <dd>
+                <ul>
+                    <li> <a href="http://www.csail.mit.edu/" target="_blank">MIT</a></li>
+                </ul>
+            </dd>
+            <dt>_self: Open the current one.</dt>
+            <dd>
+                <ul>
+                    <li> <a href="http://www.csail.mit.edu/" target="_self">MIT</a></li>
+                </ul>
+            </dd>
+            <dt>_parent: Open the parent browsing context of the current one.</dt>
+            <dd>
+                <ul>
+                    <li> <a href="http://www.csail.mit.edu/" target="_parent">MIT</a></li>
+                </ul>
+            </dd>
+            <dt>_top: Open the most top-level browsing context of the current one.</dt>
+            <dd>
+                <ul>
+                    <li> <a href="http://www.csail.mit.edu/" target="_top">MIT</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <hr>
+        <h1>Link that specifies position of Web page</h1>
+        <a href="#top">Go back top</a>
+        <hr>
+        <h1>Images</h1>
+        <p>Atributes</p>
+        <ul>
+            <li>alt: it is a description of the image, if the image does not load in the browser</li>
+            <li>width: is the width in pixels</li>
+            <li>height: is the height in pixels</li>
+        </ul>
+        <h1><img src="images/logo.png" alt="W3C cafe" width="249" height="107"></h1>
+        <hr>
+        <h1>Videos</h1>
+        <p>The < source > element allows authors to specify multiple alternative media resources for media elements.</p>
+        <video controls>
+            <source src="videos/1.mp4" type="video/mp4" codecs="avc1, mp4a">
+        </video>
+        <hr>
+        <h1>Tables</h1>
+        <hr>
+
+        <p>Table data cells are specified by < td >. < td > holds the content of a data cell.</p>
+
+        <table>
+            <tr>
+              <td>HTML+</td>
+              <td>1993</td>
+            </tr>
+        </table>
+
+        <h2>Table Heading</h2>
+        <hr>
+        <table>
+            <tr>
+              <th>Version</th>
+              <th>Published year</th>
+            </tr>
+            <tr>
+              <td>HTML+</td>
+              <td>1993</td>
+            </tr>
+        </table>
+
+        <h2>Captions</h2>
+        <hr>
+        <table>
+            <caption>HTML History</caption>
+            <tr>
+              <th>Version</th>
+              <th>Published year</th>
+            </tr>
+            <tr>
+              <td>HTML+</td>
+              <td>1993</td>
+            </tr>
+        </table>
+
+
+        <h2>Blockquote</h2>
+        <hr>
+        <P>One evening, just as Fredrick the Great was
+            getting his flute ready, and his musicians
+            were assembled, an officer brought him a
+            list of the strangers who had arrived. With
+            his flute in his hand he ran over the list,
+            but immediately turned to the assembled
+            musicians, and said, with a kind of
+            agitation:
+          <BLOCKQUOTE>"Gentlemen, old Bach is come."
+          </BLOCKQUOTE>
+          <P>The flute was now laid aside, and old Bach, who
+            had alighted at his son's lodgings, was immediately
+            summoned to the Palace.
+
+          <hr>
+
+          <h2>Forms</h2>
+          <hr>
+          <h3>The input element</h3>
+          <dl>
+            <dt>type="text"</dt>
+            <dd>
+              The text state represents a one line plain text edit control for the element's value:
+              <ul>
+                <li>Name</li>
+                <li>User ID</li>
+              </ul>
+              <form>
+                Name: <input type="text"> <br> User ID: <input type="text">
+              </form>
+            </dd>
+            <hr>
+            <dt>type="radio"</dt>
+            <dd>
+              The radio button state represents a type attribute whose value is "radio" represents a selection of one item from a list of items:
+              <ul>
+                <li>male or female</li>
+                <li>single or married</li>
+              </ul>
+              <form>
+                <input type="radio" name="gender" value="m">male <br> <input type="radio" name="gender" value="f">female 
+              </form>
+            </dd>
+            <hr>
+            <dt>type="tel"</dt>
+            <dd>
+              The telephone state represents a control for editing a telephone number given in the element's value.
+              <form>
+                Number: <input type="tel">
+              </form>
+            </dd>
+            <hr>
+            <dt>type="email"</dt>
+            <dd>
+              The E-mail state represents a control for editing a list of e-mail addresses given in the element's value.
+              <br>
+              <form>
+                E-mail: <input type="email">
+              </form>
+            </dd>
+          </dl>
+          <hr>
+          <h3>The textarea element</h3>
+          <p>The < textarea > element represents a multiline plain text edit control for the element's raw value.</p>
+          <ul>
+            <li>The cols attribute specifies the expected maximum number of characters per line. by defult, it is 20.</li>
+            <li>The rows attribute specifies the number of lines to show. by defult, it is 2.</li>
+          </ul>
+          <form>
+            Text area: <br> <textarea cols="80" rows="5"></textarea>
+          </form>
+          <hr>
+          <h3>Select menu</h3>
+          <hr>
+          <p>The select menu is specified by < select > and < option >. </p>
+          <form>
+            <select>
+              <option>Boston</option>
+              <option>New York</option>
+            </select>
+          </form>
+          <h1>Sections</h1>
+          <hr>
+          <h3>Header</h3>
+          <hr>
+          <p>Header is specified by < header >. The header element usually contain Web page's/section's headers:</p>
+          <ul>
+            <li>logo</li>
+            <li>navigations</li>
+            <li>heading(ex. h1-h6 elements)</li>
+            <li>search form</li>
+          </ul>
+          <p>... etc</p>
+          <hr>
+          <h3>Footer</h3>
+          <hr>
+          <p>Footer is specified by < footer >. A footer typically contains information about its section:</p>
+          <ul>
+            <li>author</li>
+            <li>links to related documents</li>
+            <li>copyright data</li>
+          </ul>
+          ... etc.
+          <footer>
+            <p>Copyright © 2011 W3C</p>
+          </footer>
+          <hr>
+          <h3>Navigations</h3>
+          <hr>
+          <p>Navigations are specified by < nav >.</p>
+          <nav>
+            <ul>
+              <li>navigation 1</li>
+              <li>navigation 2</li>
+              <li>navigation 3</li>
+            </ul>
+          </nav>
+          <hr>
+          <h3>Article</h3>
+          <hr>
+          <p>Article is specified by < article >. The article element represents a independent item section of content:</p>
+          <ul>
+            <li>news topic</li>
+            <li>forum post</li>
+            <li>newspaper article</li>
+            <li>blog entry</li>
+            <li>user-submitted comment</li>
+          </ul>
+          ... etc.
+          <article>
+            <h2>W3C Introduces an HTML5 Logo</h2>
+            <p>W3C unveiled today an HTML5 logo, a striking visual identity for the open web platform.
+               W3C encourages early adopters to use HTML5 and to provide feedback to
+               the W3C HTML Working Group as part of the standardization process.
+               Now there are logos for those who have taken up parts of HTML5 into their sites,
+               and for anyone who wishes to tell the world they are using or referring to HTML5, CSS, SVG, WOFF,
+               and other technologies used to build modern Web applications. </p>
+          </article>
+          <hr>
+          <h3>Aside</h3>
+          <hr>
+          <p>Aside is specified by < aside >. The < aside > element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content:</p>
+          <ul>
+            <li>pull quotes</li>
+            <li>sidebars</li>
+            <li>advertising</li>
+            <li>groups of nav elements</li>
+          </ul>
+          ... etc
+          <aside>
+            <h2 style="color: red;">related contents</h2>
+            <ul>
+              <li><a href="#">contents 1</a></li>
+              <li><a href="#">contents 2</a></li>
+              <li><a href="#">contents 3</a></li>
+            </ul>
+          </aside>
+          
+    </body>
+</html>
