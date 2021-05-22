@@ -5,51 +5,16 @@
         <title>Inicio</title>
         <meta name="description" content="I designed this page to show my personal projects, and additional information about my professional profile.">
         <meta name="keywords" content="Python, Math, MS excel, SQL, C++, AWS, GCP, Data Science"> 
-        <style>
-            /*body {
-                background: url(images/giphy.gif);
-                background-size:100%;
-                background-repeat: repeat-y;
-                background-attachment: fixed;
-                height:100%;
-                width:100%;
-                }*/
-            h1, h2 {
-                color:green;
-                font: 36pt serif;
-            }
-            ul {
-              font-style: italic;
-              font-weight: bold;
-                }
-
-            /*
-                BLOCKQUOTE {
-                color: white;
-                margin-top: 1em;
-                margin-right: 0em;
-                margin-bottom: 1em;
-                margin-left: 0em;
-                font-style: italic;
-            }
-            */
-            BLOCKQUOTE {
-                margin: 1em 0em 1em 0em;
-                font-style: italic;
-                background: #EDB;
-                padding: 0.5em;
-            }
-            a:visited, a:link {
-                text-decoration: none;
-            }
-            a:hover {background: cyan;}
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="note_styles.css">
     </head>
     <body>
-        <h2 id="top">Top</h2>
+        <h2 id="top">Indice</h2>
+        <ul>
+          <li><a href="#HTML">html</a></li>
+          <li><a href="#CSS">CSS</a></li>
+        </ul>
         <hr>
-        <h1>Welcome</h1>
+        <h1 id="HTML">Welcome to section of HTML</h1>
         <hr>
         <p>Who is Jose Izam?</p>
         <h1>unorder list</h1>
@@ -317,6 +282,169 @@
               <li><a href="#">contents 3</a></li>
             </ul>
           </aside>
-          
+          <br>
+          <hr>
+          <h1 id="CSS">Welcome to section of CSS</h1>
+          <hr>
+          <h2 style="text-align: center;">Texts</h2>
+          <hr>
+          <h3>text-align</h3>
+          <p>This property describes how inline contents of a block are horizontally aligned. </p>
+          <br>
+          <p id="le">This is a paragraph(left)</p>
+          <p id="ri">This is a paragraph(right)</p>
+          <p id="ce">This is a paragraph(center)</p>
+          <p id="ju">This is a paragraph(justify)</p>
+          <br>
+          <h3>text-decoration</h3>
+          <p>This property describes line decorations that are added to the content of an element. </p>
+          <br>
+          <p id="no">This is a paragraph(none)</p>
+          <p id="un">This is a paragraph(underline)</p>
+          <p id="ov">This is a paragraph(overline)</p>
+          <p id="th">This is a paragraph(line-through)</p>
+          <p id="bl">This is a paragraph(blink)</p>
+          <br>
+          <h3>text-indent</h3>
+          <p>The text-indent property specifies the indentation applied to first line of inline content in a block. </p>
+          <p>This is a paragraph(normal)</p>
+          <p id="ind">This is a paragraph(indent)</p>
+          <br>
+          <hr>
+          <h2 style="text-align: center;">Fonts</h2>
+          <hr>
+          <h3>font-size</h3>
+          <p>The font-size property sets size of the text. </p>
+          <ul>
+            <li>absolute-size are:</li>
+            <p>[ xx-small | x-small | small | medium | large | x-large | xx-large ] </p>
+            <li>relative-size are:</li>
+            <p>[ larger | smaller ]</p>
+          </ul>
+          <h4>Example</h4>
+          <p id="ab">This is a paragraph(small)</p>
+          <p id="px">This is a paragraph(24px)</p>
+          <p id="em">This is a paragraph(1.2em)</p>
+          <p id="per">This is a paragraph(180%)</p>
+          <br>
+          <h3>font-family</h3>
+          <p>The font-family property sets the font family of the text. </p>
+          <pre>
+          p{
+            font-family: &lt;family-name&gt; | &lt;generic-family&gt;;
+          }
+          </pre>
+          <ul>
+            <li> family-name is the name of a font family of choice. For example, "Gill", "Helvetica" and "Time New Roman".</li>
+            <li>generic-family are:</li>
+          </ul>
+          <p>[ serif | sans-serif | cursive | fantasy | monospace ]</p>
+          <h4>Example</h4>
+          <p id="se">This is a paragraph(serif)</p>
+          <p id="sa">This is a paragraph(sans-serif)</p>
+          <br>
+          <h3>font-style</h3>
+          <p>The font-style property selects the style of the text. This property is often used to select italic text. </p>
+          <pre>
+            p{
+              font-style: normal | italic | oblique;
+            }
+          </pre>
+          <h4>Example</h4>
+          <p id="no">This is a paragraph(normal)</p>
+          <p id="i">This is a paragraph(italic)</p>
+          <p id="ob">This is a paragraph(oblique)</p>
+          <br>
+          <h3>font-weight</h3>
+          <p>The font-weight property selects the weight of the text. </p>
+          <pre>
+            p{
+              font-weight: normal |bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+            }
+          </pre>
+          <h4>Example</h4>
+          <p id="one">This is a paragraph(100)</p>
+          <p id="two">This is a paragraph(200)</p>
+          <p id="three">This is a paragraph(300)</p>
+          <p id="four">This is a paragraph(400)</p>
+          <p id="five">This is a paragraph(500)</p>
+          <p id="six">This is a paragraph(600)</p>
+          <p id="seven">This is a paragraph(700)</p>
+          <p id="eight">This is a paragraph(800)</p>
+          <p id="nine">This is a paragraph(900)</p>
+          <br>
+          <hr>
+          <h2 style="text-align: center;">Lists</h2>
+          <hr>
+          <h3>list-style-type</h3>
+          <p>The list-style-type property specifies appearance of the list item marker. </p>
+          <pre>
+            list-style-type: disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek
+                | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none
+          </pre>
+          <ul>
+            <li>For unordered list. 
+              <ul>
+                <li>disc: ●</li>
+                <li>circle: ○</li>
+                <li>square: ■</li>
+              </ul>
+            </li>
+            <li>For ordered list. 
+              <ul>
+                <li>dicimal: 1, 2, 3, ...</li>
+                <li>decimal-leading-zero: 01, 02, 03, ...</li>
+                <li>lower-roman: i, ii, iii, ...</li>
+                <li>upper-roman: I, II, III, ...</li>
+                <li>lower-greek: α, β, γ, ...</li>
+                <li>lower-latin: a, b, c, ...</li>
+                <li>upper-latin: A, B, C, ...</li>
+                <li>armenian: 1, 2, 3, ...</li>
+                <li>georgian: an, ban, gan, ...</li>
+                <li>lower-alpha: a, b, c, ...</li>
+                <li>upper-alpha: A, B, C, ...</li>
+
+              </ul>
+            </li>
+          </ul>
+          <h4>Example</h4>
+          <ul>
+            <li>list item1</li>
+            <li>list item2</li>
+            <li>list item3</li>
+          </ul>
+          <ol>
+            <li>list item1</li>
+            <li>list item2</li>
+            <li>list item3</li>
+          </ol>
+          <br>
+          <h3>list-style-image</h3>
+          <p>The list-style-image property sets the image that will be used as the list item marker. </p>
+          <pre>
+            list-style-image: url(http://www.example.com/image.png);
+          </pre>
+          <h4>Example</h4>
+          <ul id = gif>
+            <li>list item1</li>
+            <li>list item2</li>
+            <li>list item3</li>
+          </ul>
+          <br>
+          <hr>
+          <h2>Link state</h2>
+          <h3>The link pseudo-classes</h3>
+          <p>Web browsers commonly display unvisited links differently from previously visited ones. </p>
+          <pre>
+            a:link{ Declarations }
+            a:visited{ Declarations }
+          </pre>
+          <ul>
+            <li>a:hover: applies while the user designates an element (with some pointing device), but does not activate it.</li>
+            <li>a:active: applies while an element is being activated by the user.</li>
+          </ul>
+          <h4>Example</h4>
+          <p>Jump to <a href="http://www.google.com/">Google</a></p>
+          <p>Jump to <a href="http://www.yahoo.com/">Yahoo!</a>
     </body>
 </html>
