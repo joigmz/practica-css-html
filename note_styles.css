@@ -138,3 +138,40 @@ p#mar{
     background-image: url(images/engranaje.gif);
     background-repeat: no-repeat
 }
+
+p#dot{ 
+    border-style: dotted;
+    width: 300px;
+    height: 100px
+ }
+p#sol{
+     border-style: solid;
+     width: 300px;
+     height: 100px
+     }
+
+p#border-example{
+    width: 300px;
+    height: 100px;
+    border-style: solid;
+    border-color: red;
+}
+
+p#thin{
+    width: 300px;
+    height: 100px;
+    border-style: solid; 
+    border-width: thin;
+}
+p#med{
+    width: 300px;
+    height: 100px;
+    border-style: solid; 
+    border-width: medium; 
+}
+p#thick{
+    width: 300px;
+    height: 100px;
+    border-style: solid;
+    border-width: thick; 
+}
