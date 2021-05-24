@@ -175,3 +175,34 @@ p#thick{
     border-style: solid;
     border-width: thick; 
 }
+
+  p#red{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+  p#blue{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+  p#green{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    float: left;
+    clear: left;
+  }
+
+  #advanced-css{
+      clear: left;
+  }
+
+  article p span{
+    color: blue;
+  }
+  #red{
+    color: red;
+  }

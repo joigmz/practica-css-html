@@ -59,18 +59,36 @@ nav ul li a:hover, nav ul li a:active{
     background-color:#ffffff;
 }
 nav{
+    float: left;
     width: 200px;
+    margin-top: 30px;
 }
 footer{
     height: 50px;
+    clear: both;
     text-align: center;
+    background-color: #999999;
 }
 #main{
-    width: 400px;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    width: 600px;
 }
 aside{
+    float: right;
     width: 250px;
+    margin-top: 30px;
 } 
+
+#main2{
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    width: 600px;
+  }
 
 #main2 table{
     border-top-width: 1px;

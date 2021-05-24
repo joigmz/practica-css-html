@@ -551,5 +551,72 @@
           <p id="thin">This is a paragraph(thin)</p>
           <p id="med">This is a paragraph(medium)</p>
           <p id="thick">This is a paragraph(thick)</p>
+
+          <hr>
+          <h2>layout</h2>
+          <hr>
+          <br>
+          <h3>CSS Floating boxes</h3>
+          <h4>float</h4>
+          <p>The float property specifies whether a box should float to the left, right, or not at all. </p>
+          <pre>
+            float: left | right | none
+          </pre>
+          <ul>
+            <li>left: The element generates a block box that is floated to the left. Content flows on the right side of the box, starting at the top.</li>
+            <li>right: Similar to 'left', except the box is floated to the right, and content flows on the left side of the box, starting at the top.</li>
+            <li>none: The box is not floated.</li>
+          </ul>
+          <br>
+          <h3 style="margin-left: 20px; text-decoration:underline;">Example</h3>
+          <p id="red">This is a paragraph</p>
+          <p id="blue">This is a paragraph</p>
+          <p id="green">This is a paragraph</p>
+          <div id="advanced-css">
+            <hr>
+            <h2>Advanced CSS</h2>
+            <hr>
+            <br>
+            <h3>Inheritance</h3>
+            <p>Some values are inherited by the children of an element in the document tree: </p>
+            <img src="images/Inheritance.png" alt="Inherintance">
+            <h4 style="margin-left: 20px;">Example</h4>
+            <p>The 'font-size' property for the h1 element will have the computed value '13pt' (130% times 10pt, the parent's value). Since the computed value of 'font-size' is inherited, the em element will have the computed value '13pt' as well. </p>
+          </div>
+          <div style="font-size: 10pt; color: brown;">
+            <h1 style="font-size: 230%;">A <em>large</em> heading</h1>
+          </div>
+          <h3>Priority level of selector</h3>
+          <p>The priority level of the selector is decided in Point of combination of selectors. </p>
+          <ul>
+            <li>style attribute = a</li>
+            <li>number of ID attributes in the selector = b</li>
+            <li>number of other attributes and pseudo-classes in the selector = c</li>
+            <li>number of element names and pseudo-elements in the selector = d</li>
+          </ul>
+          <h4>Example</h4>
+          <p>[index.html]</p>
+          <pre>
+            < body>
+              < article>
+                < p>This is < span id="red">paragraph< /span>.< /p>
+              < /article>
+            < /body>
+          </pre>
+          <p>[style.css]</p>
+          <pre>
+            article p span{
+              color: blue;
+            }
+            #red{
+              color: red;
+            }
+          </pre>
+          <article>
+            <p>This is <span id="red">paragraph</span>.</p>
+          </article>
+          <p>"article p span" are "<b>a=0, b=0, c=0, d=3 (0003)</b>".<br>"#red" is "<b>a=0, b=1, c=0, d=0 (0100)</b>".</p>
+          
+
     </body>
 </html>
